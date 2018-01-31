@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+{% load static from staticfiles%}
+
+<body>
+<img src="/abc/booktest/bbb.jpg" alt="My image">
+
+<img src="{% static 'booktest/bbb.jpg' %}" alt="My image"/>
+
+</body>
+</html>
