@@ -9,7 +9,12 @@ def index(request):
 
 def myExp(request):
      print 'myExp'
-     return HttpResponse('hello')
+     return HttpResponse('<h1>hello</h1>')
+
+
+def myh(request):
+     context = {'h':'<h1>hello</h1>'}
+     return render(request,'booktest/mth.html',context)
 
 #上传图片
 def uploadPic(request):
